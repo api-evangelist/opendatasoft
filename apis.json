@@ -1,0 +1,89 @@
+{
+    "name": "OpenDataSoft",
+    "description": "OpenDataSoft is a cloud-based turnkey platform for data publishing and API management. Its interface is intuitively designed to empower anyone, regardless of technical skills, to upload easy-to-understand Open Data, or to even share data within an admi...",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/2716-opendatasoft.jpg",
+    "tags": [
+        "data",
+        "general data",
+        "have api",
+        "have swagger",
+        "relative data",
+        "service api",
+        "streams"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/opendatasoft\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "OpenDataSoft",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/2716-opendatasoft.jpg",
+            "humanURL": "http:\/\/opendatasoft.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/opendatasoft.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/opendatasoft-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "http:\/\/www.opendatasoft.com\/category\/news\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/opendatasoft"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/opendatasoft"
+        },
+        {
+            "type": "Email",
+            "url": "contact@opendatasoft.com"
+        },
+        {
+            "type": "Email",
+            "url": "cil@opendatasoft.com"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/2716-2019-09-04-07-54-58.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/2716-2019-09-04-07-59-58.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/2716-2019-09-04-08-00-50.json"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/opendatasoft"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/opendatasoft.com"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.opendatasoft.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.opendatasoft.com\/"
+        }
+    ]
+}
