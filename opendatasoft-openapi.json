@@ -1,0 +1,506 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "2.1.0",
+        "title": "OpenDataSoft",
+        "description": "OpenDataSoft is a cloud-based turnkey platform for data publishing and API management. Its interface is intuitively designed to empower anyone, regardless of technical skills, to upload easy-to-understand Open Data, or to even share data within an admi...",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpspublic.opendatasoft.com\/api\/v2"
+    ],
+    "paths": {
+        "\/": {
+            "get": {
+                "summary": "Get",
+                "description": "API entry point\n\nProvides links for:\n* catalog, your domain's list of datasets\n* opendatasoft, all datasets on the OpenDataSoft network\n",
+                "operationId": "GetRoot",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/pages": {
+            "get": {
+                "summary": "Get Pages",
+                "description": "List of all pages from this portal.\n",
+                "operationId": "GetPages",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/pages\/{slug}": {
+            "get": {
+                "summary": "Get Pages Slug",
+                "description": "A single page's metadata from this portal\n",
+                "operationId": "GetPage",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}": {
+            "get": {
+                "summary": "Get Source",
+                "description": "Source entry points\n\nProvides links for the source's datasets and metadata.\n",
+                "operationId": "GetSource",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/aggregates": {
+            "get": {
+                "summary": "Get Source Aggregates",
+                "description": "Compute aggregations from catalog and return a list of each aggregate indexed by their names.\n",
+                "operationId": "AggregateDatasets",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets": {
+            "get": {
+                "summary": "Get Source Datasets",
+                "description": "List of available datasets, each with their endpoints, paginated.\n\nLinks provided:\n* previous page\n* next page\n* last page\n* first page\n",
+                "operationId": "GetDatasets",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}": {
+            "get": {
+                "summary": "Get Source Datasets Dataset",
+                "description": "List of available endpoints for the specified dataset, with metadata and endpoints.\n\nWill provide links for:\n* the attachments endpoint\n* the files endpoint\n* the records endpoint\n* the catalog endpoint\n",
+                "operationId": "GetDataset",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/aggregates": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Aggregates",
+                "description": "Compute aggregations from dataset records and return a list of each aggregate indexed by their names.\n",
+                "operationId": "AggregateRecords",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/attachments": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Attachments",
+                "description": "Get list of all available attachments\n",
+                "operationId": "GetDatasetAttachements",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/attachments\/{attachment_id}": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Attachments Attachment",
+                "description": "Download attachment\n",
+                "operationId": "DownloadDatasetAttachement",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/exports\/csv": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Exports Csv",
+                "description": "Export dataset in CSV format\n",
+                "operationId": "ExportRecordsCSV",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "delimiter",
+                        "in": "query",
+                        "description": "Provide a different delimiter (default ',')."
+                    }
+                ]
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/exports\/geojson": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Exports Geojson",
+                "description": "Export dataset in GEOJSON format\n",
+                "operationId": "ExportRecordsGEOJSON",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/exports\/ical": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Exports Ical",
+                "description": "Export dataset in ICAL format\n",
+                "operationId": "ExportRecordsICAL",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/exports\/json": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Exports Json",
+                "description": "Export dataset in JSON format\n",
+                "operationId": "ExportRecordsJSON",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/exports\/ov2": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Exports Ov2",
+                "description": "Export dataset in OV2 format\n",
+                "operationId": "ExportRecordsOV2",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/exports\/shp": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Exports Shp",
+                "description": "Export dataset in Esri shapefile (shp) format\n",
+                "operationId": "ExportRecordsSHP",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/exports\/xls": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Exports Xls",
+                "description": "Export dataset in XLS (Excel) format\n",
+                "operationId": "ExportRecordsXLS",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/feedback": {
+            "put": {
+                "summary": "Put Source Datasets Dataset Feedback",
+                "description": "Create new feedback entry.\n",
+                "operationId": "SendDatasetFeedback",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedback",
+                        "in": "body",
+                        "description": "Feedback entry"
+                    }
+                ]
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/files\/{file_id}": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Files File",
+                "description": "Download file\n",
+                "operationId": "GetDatasetFile",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/records": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Records",
+                "description": "Search dataset's records.\n",
+                "operationId": "GetRecords",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/records\/{record_id}": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Records Record",
+                "description": "Retrieve a single record based on its ID.\n",
+                "operationId": "GetRecord",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/reuses": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Reuses",
+                "description": "Get list of reuses\n",
+                "operationId": "GetDatasetReuses",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/reuses\/{reuse_id}": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Reuses Reuse",
+                "description": "Retrieve a single reuse based on its ID.\n",
+                "operationId": "GetDatasetReuse",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/snapshots": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Snapshots",
+                "description": "List of all snapshots for this dataset.\n",
+                "operationId": "GetDatasetSnapshots",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/datasets\/{dataset_id}\/snapshots\/{snapshot_id}": {
+            "get": {
+                "summary": "Get Source Datasets Dataset Snapshots Snapshot",
+                "description": "List of all snapshots for this dataset.\n",
+                "operationId": "DownloadDatasetSnapshot",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/exports\/csv": {
+            "get": {
+                "summary": "Get Source Exports Csv",
+                "description": "Export catalog (source) in CSV format\n",
+                "operationId": "ExportDatasetsCSV",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "delimiter",
+                        "in": "query",
+                        "description": "Provide a different delimiter (default ',')."
+                    }
+                ]
+            }
+        },
+        "\/{source}\/exports\/json": {
+            "get": {
+                "summary": "Get Source Exports Json",
+                "description": "Export catalog (source) in JSON format\n",
+                "operationId": "ExportDatasetsJson",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/exports\/rdf": {
+            "get": {
+                "summary": "Get Source Exports Rdf",
+                "description": "Export catalog (source) in RDF\/XML format\n",
+                "operationId": "ExportDatasetsRDF",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/exports\/rss": {
+            "get": {
+                "summary": "Get Source Exports Rss",
+                "description": "Export catalog (source) in RSS format\n",
+                "operationId": "ExportDatasetsRSS",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/exports\/ttl": {
+            "get": {
+                "summary": "Get Source Exports Ttl",
+                "description": "Export catalog (source) in TTL (turtle\/rdf) format\n",
+                "operationId": "ExportDatasetsTTL",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/exports\/xls": {
+            "get": {
+                "summary": "Get Source Exports Xls",
+                "description": "Export catalog (source) in XLS (Excel) format\n",
+                "operationId": "ExportDatasetsXLS",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/metadata_templates": {
+            "get": {
+                "summary": "Get Source Metadata Templates",
+                "description": "List of available metadata templates types, each with their endpoints.\n",
+                "operationId": "GetMetadataTemplatesTypes",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/metadata_templates\/{metadata_template_type}": {
+            "get": {
+                "summary": "Get Source Metadata Templates Metadata Template Type",
+                "description": "List of metadata templates available for this type.\n",
+                "operationId": "GetMetadataTemplatesType",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/{source}\/metadata_templates\/{metadata_template_type}\/{metadata_template_name}": {
+            "get": {
+                "summary": "Get Source Metadata Templates Metadata Template Type Metadata Template Name",
+                "description": "A single metadata_template\n",
+                "operationId": "GetMetadataTemplate",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "attachment": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "metas": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "dataset": {
+                "type": "object",
+                "properties": {
+                    "attachments": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "data_visible": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "dataset_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "features": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "fields": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "has_records": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "metas": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "link": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rel": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "metadata_template": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "schema": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "page": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "slug": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "record": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "size": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "timestamp": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "reuse": {
+                "type": "object",
+                "properties": {
+                    "created_at": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "thumbnail": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "user": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "snapshot": {
+                "type": "object",
+                "properties": {
+                    "created_at": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "snapshot_id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
