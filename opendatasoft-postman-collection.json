@@ -1,5 +1,5 @@
 {
-    "id": "c8ff6a529c7347af8db4863bb7233db4",
+    "id": "d04ee57c9010be200dacd88c0f549165",
     "name": "OpenDataSoft",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "68539db684d4ede923c23fa28458444e",
+            "id": "1b4ca7427c0ad42d565d8c32c0c8d88c",
             "name": "Get",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/",
             "description": "API entry point\n\nProvides links for:\n* catalog, your domain's list of datasets\n* opendatasoft, all datasets on the OpenDataSoft network\n",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "8368c805e8190576ab00ba9c71d6ffef",
+            "id": "770c3d93165e20fb8aaafdd954c75b77",
             "name": "Get Pages",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/pages",
             "description": "List of all pages from this portal.\n",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "9ac87cd7a7493fe031c74011d70923e3",
+            "id": "3d00da8f8af9b4470ac3a65f5e539825",
             "name": "Get Pages Slug",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/pages\/{slug}",
             "description": "A single page's metadata from this portal\n",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "8dcf26172a7844004518a6610597494e",
+            "id": "c18f0570005058b5c0f1dc8aed425ce0",
             "name": "Get Source",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}",
             "description": "Source entry points\n\nProvides links for the source's datasets and metadata.\n",
@@ -98,11 +98,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "795c9768bb5236bacf0b231068e4a120",
+            "id": "d682a2bcaf935ad8dcaa60f0c34e96b1",
             "name": "Get Source Aggregates",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/aggregates",
             "description": "Compute aggregations from catalog and return a list of each aggregate indexed by their names.\n",
@@ -121,11 +121,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "f02d0cc9a072af8fce4e62a1db6196b5",
+            "id": "a8cddae3dc07cd13ca44282dccbeabbd",
             "name": "Get Source Datasets",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets",
             "description": "List of available datasets, each with their endpoints, paginated.\n\nLinks provided:\n* previous page\n* next page\n* last page\n* first page\n",
@@ -144,11 +144,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "727df5e71832f901f2c6bcf95ceafd24",
+            "id": "8b409c2de300a32449a1d95b7eedefe1",
             "name": "Get Source Datasets Dataset",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}",
             "description": "List of available endpoints for the specified dataset, with metadata and endpoints.\n\nWill provide links for:\n* the attachments endpoint\n* the files endpoint\n* the records endpoint\n* the catalog endpoint\n",
@@ -167,11 +167,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "9975090efa861a3750d1b26904338e22",
+            "id": "bb886de1a342fbe959ae89d929b49210",
             "name": "Get Source Datasets Dataset Aggregates",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/aggregates",
             "description": "Compute aggregations from dataset records and return a list of each aggregate indexed by their names.\n",
@@ -190,11 +190,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "8ca4a48a6224c23e3317e82da45505f2",
+            "id": "500917b11b520b37fd7e9174bd77fb32",
             "name": "Get Source Datasets Dataset Attachments",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/attachments",
             "description": "Get list of all available attachments\n",
@@ -213,11 +213,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "cfab32e53322f14198623fb34fcaaad0",
+            "id": "f97f787f59236a776bc4b02fc9e7f47f",
             "name": "Get Source Datasets Dataset Attachments Attachment",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/attachments\/{attachment_id}",
             "description": "Download attachment\n",
@@ -236,11 +236,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "743530207739d551627117a6bab40f15",
+            "id": "87ffa2d6be76b1e56301767aaac688d2",
             "name": "Get Source Datasets Dataset Exports Csv",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/exports\/csv",
             "description": "Export dataset in CSV format\n",
@@ -267,11 +267,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "0775f2beb1631bfa53142902ece482b0",
+            "id": "35e3782729e11b101cf6b689de930a18",
             "name": "Get Source Datasets Dataset Exports Geojson",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/exports\/geojson",
             "description": "Export dataset in GEOJSON format\n",
@@ -290,11 +290,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "44d0e4eaa8ad4b67959e08985e722224",
+            "id": "5e800a35e8648579efcbb44f70463d8a",
             "name": "Get Source Datasets Dataset Exports Ical",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/exports\/ical",
             "description": "Export dataset in ICAL format\n",
@@ -313,11 +313,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "aeffc271e765c46c78ee106422fd69ba",
+            "id": "b7a4eef6ac4eae2cb72de99039b7b993",
             "name": "Get Source Datasets Dataset Exports Json",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/exports\/json",
             "description": "Export dataset in JSON format\n",
@@ -336,11 +336,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "24e49dd328023c774391b9f92fc5f690",
+            "id": "833400fe25502f8317a37d2fe5969c83",
             "name": "Get Source Datasets Dataset Exports Ov2",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/exports\/ov2",
             "description": "Export dataset in OV2 format\n",
@@ -359,11 +359,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "1bc805717273d2f2e6e8163bf8fab7c4",
+            "id": "32fc1cf6b1731dadc6d4259b015a64ad",
             "name": "Get Source Datasets Dataset Exports Shp",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/exports\/shp",
             "description": "Export dataset in Esri shapefile (shp) format\n",
@@ -382,11 +382,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "53bb2b8fb8fa1f070aa189cb1c93ba9e",
+            "id": "978af374237a56f2200a7fe58c3bbdbc",
             "name": "Get Source Datasets Dataset Exports Xls",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/exports\/xls",
             "description": "Export dataset in XLS (Excel) format\n",
@@ -405,11 +405,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "2239832c063d7c61b051b78d65b7a061",
+            "id": "f56b6f7588709f74d459255b1b086310",
             "name": "Put Source Datasets Dataset Feedback",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/feedback",
             "description": "Create new feedback entry.\n",
@@ -436,11 +436,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "900ca59aaa2404f8667d66b32268ec65",
+            "id": "ad4ebdfc3219cee307d1681e45f4c41b",
             "name": "Get Source Datasets Dataset Files File",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/files\/{file_id}",
             "description": "Download file\n",
@@ -459,11 +459,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "f5288fca858e685b13d859259f575e56",
+            "id": "a8e00b8730ebf18503d4353b792052fc",
             "name": "Get Source Datasets Dataset Records",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/records",
             "description": "Search dataset's records.\n",
@@ -482,11 +482,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "9ea7376110254d5d32ae361fc39875f3",
+            "id": "1cb6deec710701491471377d1df89f11",
             "name": "Get Source Datasets Dataset Records Record",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/records\/{record_id}",
             "description": "Retrieve a single record based on its ID.\n",
@@ -505,11 +505,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "e2e2240c28fb4f89523ae2c294b8cf60",
+            "id": "7ae2223561eb51178335b491fd765395",
             "name": "Get Source Datasets Dataset Reuses",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/reuses",
             "description": "Get list of reuses\n",
@@ -528,11 +528,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "7a89a10e66e1c937d7376e8cba1c76b3",
+            "id": "d5a3861400c4191a94dee7e6b9659921",
             "name": "Get Source Datasets Dataset Reuses Reuse",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/reuses\/{reuse_id}",
             "description": "Retrieve a single reuse based on its ID.\n",
@@ -551,11 +551,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "4fd7410948a866327b52d4276e618f9b",
+            "id": "32f6d2ab59def6ebe057a3bedbaf25e0",
             "name": "Get Source Datasets Dataset Snapshots",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/snapshots",
             "description": "List of all snapshots for this dataset.\n",
@@ -574,11 +574,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "92ea0b63d87adddcd3a23ad330651806",
+            "id": "9fe93b0a0aec06c03f790abcdd6a74a1",
             "name": "Get Source Datasets Dataset Snapshots Snapshot",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/datasets\/{dataset_id}\/snapshots\/{snapshot_id}",
             "description": "List of all snapshots for this dataset.\n",
@@ -597,11 +597,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "0b99efe854d0fd32af5dcee17305abb7",
+            "id": "ddced2e70a61d13f52ad890f238646a1",
             "name": "Get Source Exports Csv",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/exports\/csv",
             "description": "Export catalog (source) in CSV format\n",
@@ -628,11 +628,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "34421ed49854ff59230175a6bf27ff42",
+            "id": "d4521b7acdd3a1e3dca8985db6e56f42",
             "name": "Get Source Exports Json",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/exports\/json",
             "description": "Export catalog (source) in JSON format\n",
@@ -651,11 +651,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "48ded5637d20f8b4c95365da1f3faf12",
+            "id": "c2ebea6c6b1aec0e9ae3028e764ca6ed",
             "name": "Get Source Exports Rdf",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/exports\/rdf",
             "description": "Export catalog (source) in RDF\/XML format\n",
@@ -674,11 +674,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "f84a8d5ea3f29bcfbf1cd5055b23c8d7",
+            "id": "d030afc5b2ca0fbdabb346abad907c3b",
             "name": "Get Source Exports Rss",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/exports\/rss",
             "description": "Export catalog (source) in RSS format\n",
@@ -697,11 +697,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "a2681117682f296fe78fa53e3b0b5027",
+            "id": "79e20c6fdb851b955b7f6ba95c064fd3",
             "name": "Get Source Exports Ttl",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/exports\/ttl",
             "description": "Export catalog (source) in TTL (turtle\/rdf) format\n",
@@ -720,11 +720,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "92e1b1c615f781e82fb688a99e8d114b",
+            "id": "a51eab7028b0058efe78f1645e3e7988",
             "name": "Get Source Exports Xls",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/exports\/xls",
             "description": "Export catalog (source) in XLS (Excel) format\n",
@@ -743,11 +743,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "c6c9ea20cf1eef6c4b9f27b1bb8aa177",
+            "id": "78e27f640ed73206aa8eac267993ce51",
             "name": "Get Source Metadata Templates",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/metadata_templates",
             "description": "List of available metadata templates types, each with their endpoints.\n",
@@ -766,11 +766,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "f07c5fb20474e0c97ce6c9c718896d54",
+            "id": "f7c4859ff5cfa284e62358a20e0bca77",
             "name": "Get Source Metadata Templates Metadata Template Type",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/metadata_templates\/{metadata_template_type}",
             "description": "List of metadata templates available for this type.\n",
@@ -789,11 +789,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         },
         {
-            "id": "1e46faac0b68e21fa72adca2ef1976bc",
+            "id": "440c4b01bcb12b0629215255aee46b62",
             "name": "Get Source Metadata Templates Metadata Template Type Metadata Template Name",
             "url": "httpspublic.opendatasoft.com\/api\/v2\/{source}\/metadata_templates\/{metadata_template_type}\/{metadata_template_name}",
             "description": "A single metadata_template\n",
@@ -812,7 +812,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c8ff6a529c7347af8db4863bb7233db4",
+            "collectionId": "d04ee57c9010be200dacd88c0f549165",
             "rawModeData": ""
         }
     ]
