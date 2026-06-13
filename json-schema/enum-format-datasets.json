@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/json-schema/enum-format-datasets.json",
+  "title": "Enum Format Datasets",
+  "type": "string",
+  "enum": [
+    "csv",
+    "fgb",
+    "geojson",
+    "gpx",
+    "json",
+    "jsonl",
+    "jsonld",
+    "kml",
+    "n3",
+    "ov2",
+    "parquet",
+    "rdfxml",
+    "shp",
+    "turtle",
+    "xlsx"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://{domain}/api/explore/v2.1/catalog/datasets/{dataset_id}/exports/csv",
+    "parameters": {
+      "where": "population > 50000",
+      "order_by": "name",
+      "select": "name,country_code,population",
+      "delimiter": ";",
+      "list_separator": "|",
+      "quote_all": false,
+      "with_bom": false,
+      "lang": "en",
+      "timezone": "UTC"
+    }
+  },
+  "response_description": "Returns a CSV file stream with the dataset records matching the query. Content-Type: text/csv",
+  "response_example": "name;country_code;population\nChicago;US;2693976\nHouston;US;2304580\n"
+}

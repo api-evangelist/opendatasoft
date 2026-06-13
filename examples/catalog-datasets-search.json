@@ -1,0 +1,73 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://{domain}/api/explore/v2.1/catalog/datasets",
+    "parameters": {
+      "where": "modified > '2023-01-01'",
+      "limit": 10,
+      "offset": 0,
+      "order_by": "modified desc",
+      "lang": "en",
+      "timezone": "UTC"
+    }
+  },
+  "response": {
+    "total_count": 1234,
+    "results": [
+      {
+        "dataset_id": "geonames-all-cities-with-a-population-1000",
+        "has_records": true,
+        "data_visible": true,
+        "fields": [
+          {
+            "name": "geonameid",
+            "label": "Geoname ID",
+            "type": "int",
+            "annotations": {}
+          },
+          {
+            "name": "name",
+            "label": "Name",
+            "type": "text",
+            "annotations": {}
+          },
+          {
+            "name": "country_code",
+            "label": "Country Code",
+            "type": "text",
+            "annotations": {}
+          }
+        ],
+        "metas": {
+          "default": {
+            "title": "GeoNames All Cities with a Population > 1000",
+            "description": "List of all cities with a population > 1000 or seats of adm div (\u2248150.000). Data from GeoNames.",
+            "license": "Open Data Commons - Open Database License (ODbL)",
+            "modified": "2023-06-01T12:00:00Z",
+            "publisher": "GeoNames",
+            "language": "en",
+            "timezone": "UTC",
+            "records_count": 150000,
+            "keyword": [
+              "cities",
+              "geography",
+              "population"
+            ]
+          }
+        },
+        "features": [
+          "analyze",
+          "download",
+          "timeserie",
+          "geo"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "href": "/api/explore/v2.1/catalog/datasets?limit=10&offset=10",
+        "rel": "next"
+      }
+    ]
+  }
+}

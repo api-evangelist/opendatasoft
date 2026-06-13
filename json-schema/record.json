@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/json-schema/record.json",
+  "title": "Record",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "_timestamp": {
+      "type": "string",
+      "format": "dateTime"
+    },
+    "_size": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "_links": {
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/links"
+      }
+    }
+  },
+  "additionalProperties": {
+    "type": "any"
+  }
+}

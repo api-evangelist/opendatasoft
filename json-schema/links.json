@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/json-schema/links.json",
+  "title": "Links",
+  "type": "object",
+  "properties": {
+    "href": {
+      "type": "string",
+      "format": "uri"
+    },
+    "rel": {
+      "type": "string",
+      "enum": [
+        "self",
+        "first",
+        "last",
+        "next",
+        "dataset",
+        "catalog"
+      ]
+    }
+  }
+}

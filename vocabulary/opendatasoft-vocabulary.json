@@ -1,0 +1,121 @@
+{
+  "vocabulary": "Opendatasoft Explore API v2.1",
+  "description": "Key terms and concepts used across the Opendatasoft/Huwise open data platform APIs",
+  "terms": [
+    {
+      "term": "dataset",
+      "definition": "A collection of records organized around a specific topic, published on an Opendatasoft-powered portal. Identified by a unique dataset_id.",
+      "type": "resource"
+    },
+    {
+      "term": "record",
+      "definition": "A single row or item within a dataset, containing typed field values and optional geometry.",
+      "type": "resource"
+    },
+    {
+      "term": "catalog",
+      "definition": "The full collection of datasets available on a given Opendatasoft portal domain.",
+      "type": "resource"
+    },
+    {
+      "term": "ODSQL",
+      "definition": "OpenDataSoft Query Language — SQL-like filter syntax used in the 'where' parameter to filter datasets and records. Supports comparisons, boolean logic, text search, and geo functions.",
+      "type": "query-language"
+    },
+    {
+      "term": "facet",
+      "definition": "A field used to aggregate and count records by distinct values, enabling drill-down navigation (similar to Elasticsearch aggregations).",
+      "type": "concept"
+    },
+    {
+      "term": "export",
+      "definition": "A bulk download of dataset records in a specific format (CSV, JSON, Parquet, GeoJSON, Shapefile, GPX, Excel, etc.).",
+      "type": "operation"
+    },
+    {
+      "term": "domain",
+      "definition": "The hostname of an Opendatasoft-powered portal (e.g., public.opendatasoft.com). Each domain has its own catalog of datasets.",
+      "type": "infrastructure"
+    },
+    {
+      "term": "metas",
+      "definition": "Metadata fields attached to a dataset, organized by template (default, dcat, inspire, etc.). Contains title, description, license, publisher, keywords, etc.",
+      "type": "metadata"
+    },
+    {
+      "term": "attachment",
+      "definition": "A file (PDF, Excel, etc.) attached to a dataset, downloadable via the API.",
+      "type": "resource"
+    },
+    {
+      "term": "select",
+      "definition": "Query parameter to limit which fields are returned in the API response (projection).",
+      "type": "query-parameter"
+    },
+    {
+      "term": "order_by",
+      "definition": "Query parameter for sorting results by one or more fields, ascending or descending.",
+      "type": "query-parameter"
+    },
+    {
+      "term": "limit",
+      "definition": "Query parameter controlling the maximum number of results returned per page (default 10, max 100).",
+      "type": "query-parameter"
+    },
+    {
+      "term": "offset",
+      "definition": "Query parameter for pagination — number of results to skip before returning results.",
+      "type": "query-parameter"
+    },
+    {
+      "term": "lang",
+      "definition": "Query parameter specifying the language for query processing and response (ISO 639-1 code).",
+      "type": "query-parameter"
+    },
+    {
+      "term": "timezone",
+      "definition": "Query parameter specifying the timezone for date/time interpretation and output (IANA timezone name).",
+      "type": "query-parameter"
+    },
+    {
+      "term": "OData",
+      "definition": "Open Data Protocol — a REST-based standard for querying data. Opendatasoft supports OData 3.0 and 4.0 at the /api/odata endpoint.",
+      "type": "standard"
+    },
+    {
+      "term": "DCAT",
+      "definition": "Data Catalog Vocabulary — W3C standard for describing datasets in catalogs. Opendatasoft supports DCAT export via /catalog/exports/dcat.",
+      "type": "standard"
+    },
+    {
+      "term": "Huwise",
+      "definition": "The corporate name of the company formerly known as Opendatasoft, operating the platform as of 2024. The platform and APIs continue under the Opendatasoft brand.",
+      "type": "organization"
+    },
+    {
+      "term": "Explore API",
+      "definition": "The primary REST API for Opendatasoft portals, providing read access to catalog and record data. Current version is v2.1.",
+      "type": "api"
+    },
+    {
+      "term": "dataset_id",
+      "definition": "The unique identifier for a dataset within a portal, used as a path parameter in API requests.",
+      "type": "identifier"
+    },
+    {
+      "term": "record_id",
+      "definition": "The unique identifier for an individual record within a dataset.",
+      "type": "identifier"
+    },
+    {
+      "term": "links",
+      "definition": "Hypermedia links (HATEOAS) included in API responses for pagination and resource navigation.",
+      "type": "concept"
+    },
+    {
+      "term": "features",
+      "definition": "Capabilities available for a dataset, such as 'analyze', 'download', 'timeserie', 'geo'.",
+      "type": "metadata"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ods": "https://help.opendatasoft.com/apis/ods-explore-v2/#",
+
+    "Dataset": "dcat:Dataset",
+    "Catalog": "dcat:Catalog",
+    "Distribution": "dcat:Distribution",
+    "Record": "schema:DataFeedItem",
+
+    "dataset_id": {"@id": "dct:identifier", "@type": "xsd:string"},
+    "record_id": {"@id": "dct:identifier", "@type": "xsd:string"},
+    "title": {"@id": "dct:title", "@type": "xsd:string"},
+    "description": {"@id": "dct:description", "@type": "xsd:string"},
+    "publisher": {"@id": "dct:publisher", "@type": "xsd:string"},
+    "license": {"@id": "dct:license", "@type": "xsd:string"},
+    "modified": {"@id": "dct:modified", "@type": "xsd:dateTime"},
+    "created": {"@id": "dct:created", "@type": "xsd:dateTime"},
+    "language": {"@id": "dct:language", "@type": "xsd:string"},
+    "keyword": {"@id": "dcat:keyword", "@container": "@set"},
+    "theme": {"@id": "dcat:theme", "@container": "@set"},
+    "temporal": {"@id": "dct:temporal"},
+    "spatial": {"@id": "dct:spatial"},
+    "accrualPeriodicity": {"@id": "dct:accrualPeriodicity"},
+    "landingPage": {"@id": "dcat:landingPage", "@type": "@id"},
+
+    "records_count": {"@id": "ods:recordsCount", "@type": "xsd:integer"},
+    "has_records": {"@id": "ods:hasRecords", "@type": "xsd:boolean"},
+    "data_visible": {"@id": "ods:dataVisible", "@type": "xsd:boolean"},
+    "features": {"@id": "ods:features", "@container": "@set"},
+    "metas": {"@id": "ods:metas"},
+    "fields": {"@id": "ods:fields", "@container": "@set"},
+    "attachments": {"@id": "ods:attachments", "@container": "@set"},
+
+    "name": {"@id": "schema:name"},
+    "label": {"@id": "rdfs:label"},
+    "type": {"@id": "schema:additionalType"},
+    "annotations": {"@id": "ods:annotations"},
+
+    "geometry": {"@id": "schema:geo"},
+    "coordinates": {"@id": "schema:GeoCoordinates"},
+    "timestamp": {"@id": "schema:dateModified", "@type": "xsd:dateTime"},
+    "fields_value": {"@id": "schema:value"},
+
+    "facets": {"@id": "ods:facets", "@container": "@set"},
+    "facet_name": {"@id": "ods:facetName"},
+    "count": {"@id": "ods:count", "@type": "xsd:integer"},
+    "state": {"@id": "ods:facetState"},
+
+    "total_count": {"@id": "ods:totalCount", "@type": "xsd:integer"},
+    "results": {"@id": "ods:results", "@container": "@list"},
+    "links": {"@id": "ods:links", "@container": "@set"},
+    "href": {"@id": "schema:url", "@type": "@id"},
+    "rel": {"@id": "schema:linkRelationship"},
+
+    "format": {"@id": "dct:format"},
+    "mediaType": {"@id": "dcat:mediaType"},
+
+    "domain": {"@id": "ods:domain"},
+    "baseURL": {"@id": "ods:baseURL", "@type": "@id"},
+
+    "contact": {"@id": "dcat:contactPoint"},
+    "email": {"@id": "schema:email"},
+    "url": {"@id": "schema:url", "@type": "@id"}
+  },
+  "@graph": [
+    {
+      "@id": "https://help.opendatasoft.com/apis/ods-explore-v2/",
+      "@type": "schema:WebAPI",
+      "schema:name": "Opendatasoft Explore API v2.1",
+      "schema:description": "REST API providing access to all data available through the Opendatasoft platform in a coherent, hierarchical way. Supports catalog browsing, record retrieval, faceted search, and data export in multiple formats.",
+      "schema:url": "https://help.opendatasoft.com/apis/ods-explore-v2/",
+      "schema:documentation": "https://help.opendatasoft.com/apis/ods-explore-v2/",
+      "schema:version": "v2.1",
+      "schema:provider": {
+        "@type": "schema:Organization",
+        "schema:name": "Huwise (formerly Opendatasoft)",
+        "schema:url": "https://www.huwise.com/en/"
+      },
+      "schema:license": "https://www.huwise.com/en/terms-of-use/",
+      "schema:potentialAction": [
+        {
+          "@type": "schema:SearchAction",
+          "schema:name": "Search Catalog Datasets",
+          "schema:target": "https://{domain}/api/explore/v2.1/catalog/datasets"
+        },
+        {
+          "@type": "schema:ReadAction",
+          "schema:name": "Get Dataset Records",
+          "schema:target": "https://{domain}/api/explore/v2.1/catalog/datasets/{dataset_id}/records"
+        },
+        {
+          "@type": "schema:DownloadAction",
+          "schema:name": "Export Dataset",
+          "schema:target": "https://{domain}/api/explore/v2.1/catalog/datasets/{dataset_id}/exports/{format}"
+        }
+      ]
+    }
+  ]
+}

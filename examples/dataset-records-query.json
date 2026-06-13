@@ -1,0 +1,70 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://{domain}/api/explore/v2.1/catalog/datasets/{dataset_id}/records",
+    "parameters": {
+      "where": "country_code='US' AND population > 100000",
+      "limit": 20,
+      "offset": 0,
+      "order_by": "population desc",
+      "select": "name, country_code, population, coordinates",
+      "lang": "en",
+      "timezone": "America/New_York"
+    }
+  },
+  "response": {
+    "total_count": 311,
+    "results": [
+      {
+        "record_id": "b5c7f8a2e3d1",
+        "timestamp": "2023-06-01T00:00:00Z",
+        "size": 42,
+        "fields": {
+          "name": "New York City",
+          "country_code": "US",
+          "population": 8336817,
+          "coordinates": {
+            "lon": -74.006,
+            "lat": 40.7128
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.006,
+            40.7128
+          ]
+        },
+        "links": []
+      },
+      {
+        "record_id": "c4d6e9b1a2f0",
+        "timestamp": "2023-06-01T00:00:00Z",
+        "size": 40,
+        "fields": {
+          "name": "Los Angeles",
+          "country_code": "US",
+          "population": 3979576,
+          "coordinates": {
+            "lon": -118.2437,
+            "lat": 34.0522
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.2437,
+            34.0522
+          ]
+        },
+        "links": []
+      }
+    ],
+    "links": [
+      {
+        "href": "/api/explore/v2.1/catalog/datasets/geonames-all-cities/records?limit=20&offset=20",
+        "rel": "next"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/json-schema/facet_enumeration.json",
+  "title": "Facet Enumeration",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "facets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/facet_value_enumeration"
+      }
+    }
+  }
+}

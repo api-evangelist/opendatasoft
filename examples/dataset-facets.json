@@ -1,0 +1,65 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://{domain}/api/explore/v2.1/catalog/datasets/{dataset_id}/facets",
+    "parameters": {
+      "facet": [
+        "country_code",
+        "continent"
+      ],
+      "where": "population > 1000",
+      "lang": "en",
+      "timezone": "UTC"
+    }
+  },
+  "response": {
+    "facets": [
+      {
+        "name": "country_code",
+        "facets": [
+          {
+            "name": "US",
+            "count": 4122,
+            "state": "displayed",
+            "facets": []
+          },
+          {
+            "name": "CN",
+            "count": 3891,
+            "state": "displayed",
+            "facets": []
+          },
+          {
+            "name": "IN",
+            "count": 3204,
+            "state": "displayed",
+            "facets": []
+          }
+        ]
+      },
+      {
+        "name": "continent",
+        "facets": [
+          {
+            "name": "Asia",
+            "count": 48312,
+            "state": "displayed",
+            "facets": []
+          },
+          {
+            "name": "Europe",
+            "count": 28450,
+            "state": "displayed",
+            "facets": []
+          },
+          {
+            "name": "North America",
+            "count": 12098,
+            "state": "displayed",
+            "facets": []
+          }
+        ]
+      }
+    ]
+  }
+}

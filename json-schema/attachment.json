@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/json-schema/attachment.json",
+  "title": "Attachment",
+  "type": "object",
+  "properties": {
+    "href": {
+      "type": "string"
+    },
+    "metas": {
+      "type": "object",
+      "properties": {
+        "mime-type": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
