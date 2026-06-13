@@ -1,0 +1,46 @@
+name: Opendatasoft FinOps
+description: Financial operations guidance for consuming Opendatasoft (Huwise) APIs. The public API tiers are free for anonymous and registered users. Enterprise platform costs are incurred only when an organization licenses the Huwise platform to deploy its own portal. Cost optimization focuses on efficient query design and caching to stay within daily quotas.
+url: https://www.huwise.com/en/
+tiers:
+  - name: Free Public API Access
+    cost: 0
+    currency: USD
+    unit: month
+    description: All public Opendatasoft portals (including public.opendatasoft.com) are free to query. No account, credit card, or subscription required for accessing public datasets.
+
+  - name: Authenticated User Access
+    cost: 0
+    currency: USD
+    unit: month
+    description: Registration on a specific portal is free. Extended quotas are available at no additional cost to registered users. Useful for accessing restricted datasets or obtaining higher daily call limits.
+
+  - name: Enterprise Platform License
+    cost: null
+    currency: USD
+    unit: month
+    description: Organizations deploying their own Huwise-powered open data portal pay a platform license fee. Pricing is quote-based and depends on number of datasets, users, storage, and support level. Contact Huwise sales for a custom quote.
+    contact: https://www.huwise.com/en/
+
+cost-drivers:
+  - name: API Call Volume
+    description: No per-call cost for public or authenticated users on existing portals. For enterprise deployments, platform licensing may include API call volume tiers.
+    billable: false
+    note: Cost is only relevant for enterprise portal operators, not API consumers.
+
+  - name: Record Volume
+    description: No per-record cost for data consumers accessing public portals.
+    billable: false
+
+  - name: Data Storage (Enterprise)
+    description: Enterprise platform licenses may include storage limits that affect cost tiers.
+    billable: true
+    note: Applies to organizations running their own Huwise portal.
+
+optimization:
+  - tip: Cache API responses locally to avoid redundant calls against daily quotas
+  - tip: Use ODSQL where and refine parameters to fetch only needed records rather than full datasets
+  - tip: Prefer the export/download endpoints for bulk extractions to avoid paginating with many small requests
+  - tip: Use $select (OData) or select parameter (Explore v2) to limit returned fields, reducing bandwidth
+  - tip: For recurring data needs, download datasets in bulk and store locally rather than querying the live API repeatedly
+  - tip: Register on the specific portal to gain higher quotas at no cost if anonymous limits are insufficient
+  - tip: Monitor X-RateLimit-Remaining headers proactively to detect when you are approaching daily limits

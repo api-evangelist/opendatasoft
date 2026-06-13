@@ -1,0 +1,64 @@
+name: Opendatasoft Explore API Plans
+description: Opendatasoft (now Huwise) provides its Explore API through portal-specific deployments. Public portals offer anonymous access with generous daily quotas. Authenticated users receive extended quotas. Enterprise platform licensing is available via direct sales for organizations deploying their own portals.
+url: https://www.huwise.com/en/
+plans:
+  - name: Anonymous Public Access
+    description: Free, unauthenticated access to public datasets on any Opendatasoft-powered portal. Quota varies per portal — the flagship public.opendatasoft.com portal allows up to 10,000,000 API calls per day for anonymous users. No API key required for public datasets.
+    type: free
+    rateLimits:
+      - unit: day
+        limit: 10000000
+        note: Quota varies per portal; 10M/day is the public.opendatasoft.com portal default for anonymous users
+    authentication:
+      - type: none
+    features:
+      - Access to all public datasets
+      - JSON response format
+      - ODSQL query language
+      - Full-text search
+      - Geographic queries
+      - Aggregation and analysis endpoints
+      - Data export (CSV, GeoJSON, Shapefile)
+
+  - name: Authenticated User Access
+    description: Extended API access for users registered on an Opendatasoft portal. Authentication via API key or OAuth2. Provides higher quotas than anonymous access and the ability to access restricted (private) datasets that the account has been granted permission to view.
+    type: freemium
+    rateLimits:
+      - unit: day
+        limit: null
+        note: Extended quotas configured per portal by administrators; higher than anonymous limits
+    authentication:
+      - type: apiKey
+        description: API key passed as query parameter (?apikey=KEY) or HTTP header (X-API-Key)
+      - type: oauth2
+        description: OAuth2 Bearer token following RFC 6749 / RFC 6750; authorization at /oauth2/authorize/, token at /oauth2/token/
+    features:
+      - All Anonymous features
+      - Access to restricted/private datasets (if granted)
+      - Higher daily call quota
+      - User-specific quota tracking via portal profile
+
+  - name: Enterprise Platform License
+    description: Full Huwise (Opendatasoft) platform license for organizations deploying their own white-labeled open data portal. Includes API access configuration, custom branding, data catalog, metadata management, AI-powered search, and role-based access control. Pricing is quote-based via sales contact.
+    type: enterprise
+    rateLimits:
+      - unit: day
+        limit: null
+        note: Configurable by portal administrator; no fixed platform-wide ceiling
+    authentication:
+      - type: apiKey
+      - type: oauth2
+    features:
+      - All Authenticated features
+      - Custom portal deployment
+      - White-label branding
+      - Role-based access control
+      - Metadata management
+      - Data quality and lineage tools
+      - AI-powered search engine
+      - MCP integration for AI agents
+      - Analytics and usage tracking
+      - SLA support
+    contact:
+      url: https://www.huwise.com/en/
+      note: Contact sales for pricing via demo request form

@@ -1,0 +1,39 @@
+name: Opendatasoft OData API Plans
+description: The Opendatasoft OData API follows the same access and quota model as the Explore API v2.1 — anonymous public access, authenticated user access with extended quotas, and enterprise portal licensing. The OData endpoint is available on all Opendatasoft-powered portals at /api/odata.
+url: https://help.opendatasoft.com/apis/odata/
+plans:
+  - name: Anonymous Public Access
+    description: Free, unauthenticated OData access to public datasets on any Opendatasoft portal. Supports OData 3.0 and 4.0 protocols. No registration required for public data.
+    type: free
+    rateLimits:
+      - unit: day
+        limit: 10000000
+        note: Quota varies per portal; 10M/day is the public.opendatasoft.com portal default
+    authentication:
+      - type: none
+    features:
+      - OData 3.0 and 4.0 compliance
+      - JSON, XML, ATOM formats
+      - $filter, $orderby, $top, $skip, $select, $count, $search
+      - Up to 10,000 records per request
+      - Metadata endpoint (/$metadata)
+
+  - name: Authenticated User Access
+    description: Extended OData access for registered portal users, enabling access to restricted datasets and higher daily call quotas.
+    type: freemium
+    authentication:
+      - type: apiKey
+        description: Authorization header (Authorization: Apikey KEY) or query parameter (?apikey=KEY)
+      - type: oauth2
+        description: OAuth2 Bearer token
+    features:
+      - All Anonymous features
+      - Access to private/restricted datasets
+      - Higher daily quota
+
+  - name: Enterprise Platform License
+    description: OData API included as part of the full Huwise enterprise platform license. Configuration and quota limits managed by the portal administrator.
+    type: enterprise
+    contact:
+      url: https://www.huwise.com/en/
+      note: Quote-based pricing via demo request

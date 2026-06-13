@@ -1,0 +1,32 @@
+name: Opendatasoft OData API Rate Limits
+description: The Opendatasoft OData API shares the same rate-limiting infrastructure as the Explore API. Daily quotas are enforced per portal and per user tier, communicated via standard X-RateLimit response headers. Record retrieval is limited to 10,000 records per response using $top and $skip pagination.
+url: https://help.opendatasoft.com/apis/odata/
+headers:
+  - name: X-RateLimit-Limit
+    description: Total daily API call quota for the current user/IP on this portal
+  - name: X-RateLimit-Remaining
+    description: Remaining API calls in the current daily period
+  - name: X-RateLimit-Reset
+    description: Unix epoch timestamp for next quota reset
+errors:
+  - code: 429
+    message: Too Many Requests
+    description: Daily quota exceeded. Use exponential backoff before retrying.
+limits:
+  - scope: anonymous
+    unit: day
+    limit: 10000000
+    note: Up to 10 million calls per day for anonymous users on public.opendatasoft.com. Portal-specific limits may differ.
+  - scope: authenticated
+    unit: day
+    limit: null
+    note: Higher quotas for registered users; configured per portal.
+  - scope: records-per-request
+    unit: request
+    limit: 10000
+    note: Maximum records per OData response using $top/$skip parameters
+recommendations:
+  - Use $top and $skip for pagination rather than requesting all records at once
+  - Prefer authenticated requests for extended quotas
+  - Monitor X-RateLimit-Remaining to avoid hitting the daily limit
+  - Use $select to limit fields returned, reducing payload size and server load

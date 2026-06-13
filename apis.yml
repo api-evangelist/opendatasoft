@@ -1,0 +1,115 @@
+name: Opendatasoft
+description: Open data platform with REST APIs for accessing public datasets from 1,000+ cities and organizations, providing standard OData and JSON query interfaces. Now operating as Huwise, the platform powers 3,000+ data marketplaces and provides catalog, records, analysis, and export APIs across public portals worldwide.
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Open Data
+  - Datasets
+  - Public Data
+  - OData
+  - REST
+  - Government
+  - Cities
+apis:
+  - name: Opendatasoft Explore API v2.1
+    description: RESTful API for searching, browsing, and retrieving records from datasets hosted on any Opendatasoft-powered portal. Supports full-text search, filtering via ODSQL, geographic queries, aggregation/analysis, and data export in multiple formats. Returns JSON by default.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.opendatasoft.com/apis/ods-explore-v2/
+    baseURL: https://{domain}/api/explore/v2.1
+    tags:
+      - Open Data
+      - Datasets
+      - Records
+      - Catalog
+      - Search
+      - Analysis
+    properties:
+      - type: Documentation
+        url: https://help.opendatasoft.com/apis/ods-explore-v2/
+      - type: OpenAPI
+        url: https://public.opendatasoft.com/api/explore/v2.1/
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/plans/opendatasoft-explore-api.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/rate-limits/opendatasoft-explore-api.yml
+    contact:
+      - FN: Huwise Support
+        url: https://community.huwise.com/p/help
+        email: ''
+
+  - name: Opendatasoft OData API
+    description: OData 3.0 and 4.0 compliant REST API for querying Opendatasoft datasets using standard OData query parameters including filtering, sorting, pagination, field selection, and full-text search. Supports JSON, XML, and ATOM response formats. Read-only service accessed at /api/odata relative to the platform hostname.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.opendatasoft.com/apis/odata/
+    baseURL: https://{domain}/api/odata
+    tags:
+      - OData
+      - Open Data
+      - Datasets
+      - Standards
+      - Query
+    properties:
+      - type: Documentation
+        url: https://help.opendatasoft.com/apis/odata/
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/plans/opendatasoft-odata-api.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/rate-limits/opendatasoft-odata-api.yml
+    contact:
+      - FN: Huwise Support
+        url: https://community.huwise.com/p/help
+        email: ''
+
+  - name: Opendatasoft Explore API v1 (Deprecated)
+    description: Legacy REST API (v1) for searching datasets and records on Opendatasoft portals. Supports dataset search, dataset lookup, records search, records lookup, analysis, download, geo clustering, real-time push, and multimedia download. Deprecated — new projects should use Explore API v2.1.
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.opendatasoft.com/apis/ods-search-v1/
+    baseURL: https://{domain}/api/records/1.0
+    tags:
+      - Open Data
+      - Datasets
+      - Records
+      - Legacy
+      - Deprecated
+    properties:
+      - type: Documentation
+        url: https://help.opendatasoft.com/apis/ods-search-v1/
+    contact:
+      - FN: Huwise Support
+        url: https://community.huwise.com/p/help
+        email: ''
+
+common:
+  - type: Website
+    url: https://www.huwise.com/en/
+  - type: LegacyWebsite
+    url: https://www.opendatasoft.com/
+  - type: Developer
+    url: https://help.opendatasoft.com/
+  - type: Community
+    url: https://community.huwise.com/p/help
+  - type: GitHub
+    url: https://github.com/opendatasoft
+  - type: Blog
+    url: https://www.huwise.com/en/blog/
+  - type: PrivacyPolicy
+    url: https://www.huwise.com/en/privacy-policy/
+  - type: TermsOfService
+    url: https://www.huwise.com/en/terms-of-use/
+  - type: PostmanWorkspace
+    url: https://www.postman.com/api-evangelist/workspace/opendatasoft
+  - type: Authentication
+    url: https://help.opendatasoft.com/apis/ods-explore-v2/#section/Authentication
+  - type: Plans
+    url: https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/plans/opendatasoft-explore-api.yml
+  - type: RateLimits
+    url: https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/rate-limits/opendatasoft-explore-api.yml
+  - type: FinOps
+    url: https://raw.githubusercontent.com/api-evangelist/opendatasoft/refs/heads/main/finops/opendatasoft.yml
+maintainers:
+  - FN: API Evangelist
+    url: https://apievangelist.com
+    email: kin@apievangelist.com
