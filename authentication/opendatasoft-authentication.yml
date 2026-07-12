@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/opendatasoft-explore-api-v2.1.json
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - query
+schemes:
+- name: apikey
+  type: apiKey
+  in: query
+  parameter: apikey
+  description: API key to make authenticated requests.
+  sources:
+  - openapi/opendatasoft-explore-api-v2.1.json

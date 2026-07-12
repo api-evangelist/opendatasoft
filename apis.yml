@@ -83,6 +83,12 @@ apis:
         email: ''
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/opendatasoft-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/opendatasoft-domain-security.yml
+  - type: Authentication
+    url: authentication/opendatasoft-authentication.yml
   - type: Website
     url: https://www.huwise.com/en/
   - type: LegacyWebsite
