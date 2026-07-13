@@ -2,11 +2,11 @@
   "repo": "opendatasoft",
   "feeds": [
     {
-      "source": "https://www.huwise.com/en/huwise-blog/",
+      "source": "https://www.huwise.com/en/huwise-blog/feed/",
       "feed_url": "https://www.huwise.com/en/huwise-blog/feed/",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "feed"
     },
     {
       "source": "https://github.com/opendatasoft",
@@ -17,5 +17,5 @@
     }
   ],
   "post_count": 1,
-  "fetched": "2026-06-27T12:03:07Z"
+  "fetched": "2026-07-11T11:50:51Z"
 }
