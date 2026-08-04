@@ -1,0 +1,16 @@
+{
+  "provider": "opendatasoft",
+  "sources": [
+    "opendatasoft-catalog-api-openapi.yml",
+    "opendatasoft-dataset-api-openapi.yml"
+  ],
+  "outputs": [
+    "opendatasoft-catalog-api-openapi.yml",
+    "opendatasoft-dataset-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
