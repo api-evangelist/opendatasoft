@@ -113,6 +113,8 @@ apis:
   humanURL: https://help.opendatasoft.com/apis/ods-explore-v2/
   baseURL: https://{domain}/api/explore/v2.1
   tags:
+  - Datasets
+  tags_raw:
   - Dataset
   properties:
   - type: OpenAPI
