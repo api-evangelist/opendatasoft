@@ -1,0 +1,33 @@
+# Front Door AI Index — opendatasoft — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: opendatasoft
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.huwise.com
+  final_host: www.huwise.com
+  ownership: own
+  owner: opendatasoft
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 53
+  host_score: 53
+  density: 25.47
+  words: 2081
+  tiers:
+    agentic: 20
+    core: 33
+    model: 0
+  ambiguous: 20
+  top_terms:
+    AI: 32
+    agent: 14
+    AI agent: 12
+    MCP: 6
+    smart: 4
+    automation: 2
+    agentic: 1
+    generative ai: 1
+    model context protocol: 1
