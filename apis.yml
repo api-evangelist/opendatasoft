@@ -39,6 +39,7 @@ tags:
   - REST
   - Government
   - Cities
+  - Data Catalog
 apis:
 - name: Opendatasoft OData API
   description: >-
