@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: Opendatasoft Explore API Plans
 description: Opendatasoft (now Huwise) provides its Explore API through portal-specific deployments. Public portals offer anonymous access with generous daily quotas. Authenticated users receive extended quotas. Enterprise platform licensing is available via direct sales for organizations deploying their own portals.
 url: https://www.huwise.com/en/
@@ -62,3 +66,46 @@ plans:
     contact:
       url: https://www.huwise.com/en/
       note: Contact sales for pricing via demo request form
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: Anonymous Public Access
+    access: free
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Authenticated User Access
+    access: freemium
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise Platform License
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Anonymous Public Access
+    access: free
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Authenticated User Access
+    access: freemium
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise Platform License
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []

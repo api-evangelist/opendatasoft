@@ -1,3 +1,11 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+# Coverage demoted 2026-10-07 (roadmap#942, PLAN.md Stage A): this file was written by an API Evangelist
+# sweep and names no billing unit, meters or pricing category read from the provider — it restates the
+# FinOps framework. It is `x-coverage: unmeasured`, and the FOCUS alignment it claimed has been removed.
+x-coverage: unmeasured
+method: generated
 name: Opendatasoft FinOps
 description: Financial operations guidance for consuming Opendatasoft (Huwise) APIs. The public API tiers are free for anonymous and registered users. Enterprise platform costs are incurred only when an organization licenses the Huwise platform to deploy its own portal. Cost optimization focuses on efficient query design and caching to stay within daily quotas.
 url: https://www.huwise.com/en/

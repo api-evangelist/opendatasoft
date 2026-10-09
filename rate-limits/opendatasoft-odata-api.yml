@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: Opendatasoft OData API Rate Limits
 description: The Opendatasoft OData API shares the same rate-limiting infrastructure as the Explore API. Daily quotas are enforced per portal and per user tier, communicated via standard X-RateLimit response headers. Record retrieval is limited to 10,000 records per response using $top and $skip pagination.
 url: https://help.opendatasoft.com/apis/odata/

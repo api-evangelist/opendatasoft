@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: Opendatasoft OData API Plans
 description: The Opendatasoft OData API follows the same access and quota model as the Explore API v2.1 — anonymous public access, authenticated user access with extended quotas, and enterprise portal licensing. The OData endpoint is available on all Opendatasoft-powered portals at /api/odata.
 url: https://help.opendatasoft.com/apis/odata/
@@ -23,7 +27,7 @@ plans:
     type: freemium
     authentication:
       - type: apiKey
-        description: Authorization header (Authorization: Apikey KEY) or query parameter (?apikey=KEY)
+        description: 'Authorization header (Authorization: Apikey KEY) or query parameter (?apikey=KEY)'
       - type: oauth2
         description: OAuth2 Bearer token
     features:
@@ -37,3 +41,46 @@ plans:
     contact:
       url: https://www.huwise.com/en/
       note: Quote-based pricing via demo request
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: Anonymous Public Access
+    access: free
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Authenticated User Access
+    access: freemium
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise Platform License
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Anonymous Public Access
+    access: free
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Authenticated User Access
+    access: freemium
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise Platform License
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
