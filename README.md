@@ -64,84 +64,159 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Open data platform with REST APIs for accessing public datasets from 1,000+ cities and organizations, providing standard OData and JSON query interfaces. Now operating as Huwise, the platform powers 3,000+ data marketplaces for government agencies, utilities, energy companies, banks, and transport organizations across 25 countries.
+Open data platform with REST APIs for accessing public datasets from 1,000+ cities and organizations, providing standard OData and JSON query interfaces. Now operating as Huwise, the platform powers 3,000+ data marketplaces and provides catalog, records, analysis, and export APIs across public portals worldwide.
 
-**Provider:** Huwise (formerly Opendatasoft)
-**Website:** https://www.huwise.com/en/
-**Developer Docs:** https://help.opendatasoft.com/
-**GitHub:** https://github.com/opendatasoft
+**Areas:** Open Data · Datasets · Public Data · OData · REST · Government · Cities · Data Catalog
 
-## APIs
+## Opendatasoft on APIs.io
 
-### Explore API v2.1 (Current)
-RESTful API for searching, browsing, and querying datasets on any Opendatasoft-powered portal.
+Everything profiled for Opendatasoft is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/opendatasoft/](https://apis.io/providers/opendatasoft/)** — or go straight to one of the APIs or properties below.
 
-- **Base URL:** `https://{domain}/api/explore/v2.1`
-- **Docs:** https://help.opendatasoft.com/apis/ods-explore-v2/
-- **Formats:** JSON
-- **Auth:** API key (header or query param) or OAuth2; anonymous access for public datasets
+### APIs (4)
 
-Key endpoints:
-- `GET /catalog/datasets` — list and search datasets
-- `GET /catalog/datasets/{dataset_id}` — dataset metadata and schema
-- `GET /catalog/datasets/{dataset_id}/records` — query records (ODSQL)
-- `GET /catalog/datasets/{dataset_id}/exports/{format}` — bulk export
-- `GET /catalog/datasets/{dataset_id}/aggregates` — aggregation/analysis
-- `GET /catalog/facets` — catalog facet values
+- [Opendatasoft OData API](https://apis.io/apis/opendatasoft/opendatasoft-odata-api/) — OData 3.0 and 4.0 compliant REST API for querying Opendatasoft datasets using standard OData query parameters including filtering, sorting, pagination,…
+- [Opendatasoft Explore API v1 (Deprecated)](https://apis.io/apis/opendatasoft/opendatasoft-explore-api-v1-deprecated/) — Legacy REST API (v1) for searching datasets and records on Opendatasoft portals. Supports dataset search, dataset lookup, records search, records lookup,…
+- [Opendatasoft Catalog API](https://apis.io/apis/opendatasoft/opendatasoft-catalog-api/) — API to enumerate datasets
+- [Opendatasoft Dataset API](https://apis.io/apis/opendatasoft/opendatasoft-dataset-api/) — API to work on records
 
-### OData API
-OData 3.0 and 4.0 compliant interface for querying datasets using standard OData query parameters.
+### Published properties
 
-- **Base URL:** `https://{domain}/api/odata`
-- **Docs:** https://help.opendatasoft.com/apis/odata/
-- **Formats:** JSON, XML, ATOM
-- **Auth:** API key or OAuth2; anonymous access for public datasets
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Explore API v1 (Deprecated)
-Legacy search API — still operational but new projects should use v2.1.
+#### Agentic access (1)
 
-- **Docs:** https://help.opendatasoft.com/apis/ods-search-v1/
+Which operations an agent can call, which act, and which need a human in the loop.
 
-## Authentication
+- [Opendatasoft Agentic Access](https://apis.io/agentic-access/opendatasoft/opendatasoft-agentic-access/)
 
-| Method | How to Use |
-|--------|-----------|
-| API Key | `?apikey=YOUR_KEY` query param or `X-API-Key: YOUR_KEY` header |
-| OAuth2 | Bearer token via `/oauth2/authorize/` and `/oauth2/token/` endpoints |
-| Anonymous | No credentials needed for public datasets |
+#### JSON Schema (9)
 
-## Rate Limits
+The data models the API reads and writes.
 
-Rate limits are portal-specific and communicated via response headers:
+- [Attachment](https://apis.io/schemas/opendatasoft/attachment/)
+- [Dataset](https://apis.io/schemas/opendatasoft/dataset/)
+- [Datasets](https://apis.io/schemas/opendatasoft/datasets/)
+- [Enum Format Datasets](https://apis.io/schemas/opendatasoft/enum-format-datasets/)
+- [Facet Enumeration](https://apis.io/schemas/opendatasoft/facet_enumeration/)
+- [Facet Value Enumeration](https://apis.io/schemas/opendatasoft/facet_value_enumeration/)
+- [Links](https://apis.io/schemas/opendatasoft/links/)
+- [Record](https://apis.io/schemas/opendatasoft/record/)
+- [Records](https://apis.io/schemas/opendatasoft/records/)
 
-| Header | Description |
-|--------|-------------|
-| `X-RateLimit-Limit` | Daily quota |
-| `X-RateLimit-Remaining` | Remaining calls today |
-| `X-RateLimit-Reset` | Unix timestamp of next reset |
+#### JSON-LD (1)
 
-- Anonymous users on public.opendatasoft.com: **10,000,000 calls/day**
-- Records per request: **100** (up to 10,000 with pagination)
-- HTTP 429 returned when quota is exceeded
+Linked-data contexts for the provider's vocabulary.
 
-## Plans
+- [Opendatasoft Context](https://apis.io/jsonld/opendatasoft/opendatasoft-context/)
 
-| Tier | Cost | Notes |
-|------|------|-------|
-| Anonymous | Free | Public datasets, up to 10M calls/day on public portal |
-| Authenticated | Free | Register on portal for extended quota + restricted dataset access |
-| Enterprise | Quote | Full Huwise platform license for deploying your own portal |
+#### Examples (4)
 
-## Repository Contents
+Example requests and responses.
 
-```
-apis.yml                              # APIs.json 0.19 provider profile
-plans/
-  opendatasoft-explore-api.yml        # Explore API plans
-  opendatasoft-odata-api.yml          # OData API plans
-rate-limits/
-  opendatasoft-explore-api.yml        # Explore API rate limits
-  opendatasoft-odata-api.yml          # OData API rate limits
-finops/
-  opendatasoft.yml                    # FinOps guidance
-```
+- [Catalog Datasets Search](https://apis.io/examples/opendatasoft/catalog-datasets-search/)
+- [Dataset Export Csv](https://apis.io/examples/opendatasoft/dataset-export-csv/)
+- [Dataset Facets](https://apis.io/examples/opendatasoft/dataset-facets/)
+- [Dataset Records Query](https://apis.io/examples/opendatasoft/dataset-records-query/)
+
+#### Collections (2)
+
+Postman and Open Collection request collections.
+
+- [Explore Catalog API](https://apis.io/collections/opendatasoft/open-opendatasoft-catalog-api/)
+- [Explore Catalog Dataset API](https://apis.io/collections/opendatasoft/open-opendatasoft-dataset-api/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Opendatasoft — jsonschema rules](https://apis.io/rules/opendatasoft/opendatasoft-jsonschema-spectral-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Opendatasoft Authentication](https://apis.io/security/opendatasoft/opendatasoft-authentication/)
+- [Opendatasoft Domain Security](https://apis.io/security/opendatasoft/opendatasoft-domain-security/)
+- [Opendatasoft Vulnerability Disclosure](https://apis.io/security/opendatasoft/opendatasoft-vulnerability-disclosure/)
+
+#### Plans and pricing (2)
+
+Published plans, tiers and prices.
+
+- [Opendatasoft Explore Api](https://apis.io/plans/opendatasoft/opendatasoft-explore-api/)
+- [Opendatasoft Odata Api](https://apis.io/plans/opendatasoft/opendatasoft-odata-api/)
+
+#### Rate limits (2)
+
+Published request limits.
+
+- [Opendatasoft Explore Api](https://apis.io/rate-limits/opendatasoft/opendatasoft-explore-api/)
+- [Opendatasoft Odata Api](https://apis.io/rate-limits/opendatasoft/opendatasoft-odata-api/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Opendatasoft](https://apis.io/finops/opendatasoft/opendatasoft/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.huwise.com/en/)
+- [Blog](https://www.huwise.com/en/blog/)
+- [Terms of service](https://www.huwise.com/en/terms-of-use/)
+- [Privacy policy](https://www.huwise.com/en/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 35.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 56.9 |
+| Contract governance | 9.8 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 18.4 |
+
+**Agent readiness 28.7** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 26.5** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/opendatasoft/](https://apis.io/providers/opendatasoft/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Opendatasoft: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/opendatasoft/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
